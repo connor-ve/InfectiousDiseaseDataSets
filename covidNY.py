@@ -26,7 +26,11 @@ response = requests.get("https://github.com/nytimes/covid-19-data/raw/master/us-
 data2022 = [[],[],[],[],[],[],[],[],[],[],[],[]]
 data2023 = [[],[],[],[],[],[],[],[],[],[],[],[]]
 dailyData = response.text.splitlines()
-definedHeaders = dailyData.pop(0)
+definedHeaders = dailyData.pop(0).split(',')
+
+for _ in range(len(data2022)):
+  data2022[_].append(definedHeaders)
+  data2023[_].append(definedHeaders)
 
 def parseYear(date):
   year = date.split('-')[0]
