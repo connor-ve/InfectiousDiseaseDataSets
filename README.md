@@ -10,6 +10,10 @@ __This data is in compliance with all licenses from original sources and must be
 
 For Team Scared to Compile at Cleveland State University we have chosen to make a web application regarding infectious diseases tracking and prediction. For this we needed to come up with alot of up to date records regarding a multitude of diseases. This is repository will act as a collection of data sorted by date and disease with as current of information that is available for us. 
 
+### Implementation 
+
+- TBD
+
 ### Diseases and their sources
 
 - Covid _[via NyTimes](https://github.com/nytimes/covid-19-data)_
